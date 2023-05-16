@@ -85,7 +85,7 @@ def check_url(url):
                     # compare the hashes
                     img_phash = imagehash.average_hash(img)
                     for known_phash in known_phashes:
-                        # Seems to be the sweetspot so we dont trigger on other companies...like Dave.
+                        # Seems to be the sweetspot so we dont trigger on other companies...
                         if img_phash - known_phash < 9:
                             if domain not in matched_domains:
                                 matched_domains.add(domain)
